@@ -19,6 +19,9 @@ class RandomLinkSplit(BaseTransform):
     in validation and test splits; and the validation split does not include
     edges in the test split.
 
+    RandomLinkSplit transform is primarily used for a Link Prediction Scenario
+    whereby the task is to predict missing links in a graph.
+
     .. code-block::
 
         from torch_geometric.transforms import RandomLinkSplit
